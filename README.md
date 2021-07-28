@@ -9,13 +9,17 @@ It might work for other farms as well, just make sure you're safe to afk and you
 2. Put food in hand so that the script will be able to eat.
 3. Start script.
 4. Enter Minecraft window, aim to where you want to hit.
-5. Make sure that the script is hitting mobs.
-6. Allow to run as long as you want.
-7. Follow directions below to end script.
+5. The script will start hitting after 10 seconds.
+6. The script hits 10 times and then eats 1 food item.
+7. Make sure that the script is hitting mobs.
+8. Allow to run as long as you want.
+9. While the script is hitting, not when it's eating, click exit, and quickly move the cursor to a corner of the screen.
 
-## Ending script:
-To end script take focus away from Minecraft window by hitting exit, and move cursor to a corner of the screen for several seconds.
-Make sure that you don't try to end the script while it is eating or it will not release the right mouse button and the mouse will become unresponsive in Minecraft. If that happens then restart the script, wait until it is running properly again and retry ending the script.
+## If mouse becomes unresponsive:
+Use the MouseFixerScript following these directions:
+1. Start the script.
+2. Enter the minecraft window and enter gameplay (not in any menus).
+3. The script will run after 5 seconds and fix mouse control.
 
 ## Future updates:
-I will be testing possible solutions to the right mouse button becoming unresponsive, and adding popups to confirm when the script has started and when it ends.
+I will be testing other possible solutions to the right mouse button becoming unresponsive, and adding popups to confirm when the script has started and when it ends.
