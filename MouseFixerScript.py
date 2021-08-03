@@ -19,5 +19,6 @@ import pyautogui, time
 def fixRightClick():
     time.sleep(5)
     pyautogui.mouseUp()
+    print("Attempted to restore mouse control. Run again if unsuccessful")
 
 fixRightClick()
