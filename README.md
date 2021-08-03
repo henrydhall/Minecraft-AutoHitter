@@ -16,7 +16,12 @@ It might work for other farms as well, just make sure you're safe to afk and you
 9. While the script is hitting, not when it's eating, click exit, and quickly move the cursor to a corner of the screen.
 
 ## If mouse becomes unresponsive:
-Use the MouseFixerScript following these directions:
+The script should detect that there could be mouse control issues. 
+When prompted run the MouseFixerScript.py script by entering 'y'.
+Make the Minecraft window activate and exit any menus.
+After 5 second the script will run and fix mouse control.
+
+If you have mouse control issues, but are not prompted to run the Mouse
 1. Start the script.
 2. Enter the minecraft window and enter gameplay (not in any menus).
 3. The script will run after 5 seconds and fix mouse control.
