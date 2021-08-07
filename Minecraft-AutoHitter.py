@@ -10,6 +10,11 @@
 """
 
 """
+#The script will hit 10 times over 10 seconds by pressing the left mouse button
+#and then push the right mouse button down long enough to eat 1 food item and then release the button.
+"""
+
+"""
 #To use:
 # 1. Situate yourself in front of the area where mobs will fall.
 #    a. Put food in hand so that the script will be able to eat.
@@ -37,7 +42,7 @@
 """
 
 import pyautogui, time, pyinputplus, MouseFixerScript
-
+    
 def hitOnce():
     pyautogui.click()
 
@@ -46,9 +51,16 @@ def eatFood():
     time.sleep(2)
     pyautogui.mouseUp()
 
+def countDown(delay = 10):
+    print( f"Autoclicking will begin in {delay} seconds." )
+    for i in range(0,delay):
+        print( delay - i )
+        time.sleep(1)
+
 def afkXPFarm():
     eating = False
-    time.sleep(10)
+    countDown()  
+    print("Now autoclicking.")
     while True:
         try:
             for i in range(0,10):
@@ -60,14 +72,18 @@ def afkXPFarm():
         except pyautogui.FailSafeException:
             if eating:
                 print("Mouse control might be abnormal in active Minecraft session.")
-                print("Run MouseFixerScript.py to correct problems.")
-                runMouseFixerScript = input("Enter 'y' to run MouseFixerScript.py now: ")
+                print("Run MouseFixerScript to correct problems.")
+                runMouseFixerScript = input("Enter 'y' to run MouseFixerScript now: ")
                 if runMouseFixerScript == "y":
                     MouseFixerScript.fixRightClick()
+                    print("If mouse control is not normal, you will need to rerun MouseFixerScript.py on your own.")
+                else:
+                    print("Mouse control might be abnormal. Running MouseFixerScript.py is recommended.")
             if not eating:
-                print("Ended script.")
-                print("  Mouse control should be normal.")
+                print("Mouse control should be normal.")
             break
-    
-afkXPFarm()
+    print("Program ended.")
+        
+if __name__ == '__main__':
+    afkXPFarm()
     

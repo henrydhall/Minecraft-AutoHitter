@@ -16,9 +16,16 @@
 
 import pyautogui, time
 
-def fixRightClick():
-    time.sleep(5)
-    pyautogui.mouseUp()
-    print("Attempted to restore mouse control. Run again if unsuccessful")
+def countDown(delay = 5):
+    print( f"Mouse fixer will run in {delay} seconds." )
+    for i in range(0,delay):
+        print( delay - i )
+        time.sleep(1)
 
-fixRightClick()
+def fixRightClick():
+    countDown()
+    pyautogui.mouseUp()
+    print("Attempted to restore mouse control. Run again if needed.")
+
+if __name__ == '__main__':
+    fixRightClick()
