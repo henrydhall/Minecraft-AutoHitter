@@ -28,3 +28,10 @@ If you have mouse control issues, but are not prompted to run the Mouse
 
 ## Future updates:
 I will be testing other possible solutions to the right mouse button becoming unresponsive, and adding popups to confirm when the script has started and when it ends.
+
+## TODO
+* Fix documents.
+* Refactor.
+* Fix mouse problems more effectively.
+* Make requirements file.
+* Get virtual environment going. 
